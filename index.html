@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="image/png" sizes="16x16" rel="icon" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Zen+Kaku+Gothic+Antique:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="JS.js"></script>
+  <script src="overlay.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>@privet.beauty</title>
+
+</head>
+
+<body>
+  <div class="background">
+    <div class="main">
+      <div class="cont">
+
+        <nav id="navbar" class="nav navbar navbar-expand-md fixed-top site-navigation white">
+          <a class="navbar-brand page-scroll" href="#">
+            <p class="logo">@privet.beaty</p>
+          </a>
+          <div class="button">
+            <a class="btn-open" href="#"></a>
+          </div>
+        </nav>
+
+        <div class="overlay">
+          <div class="wrap">
+            <ul class="wrap-nav">
+              <ul class="overlay__items">
+                <li class="overlay__item"><a class="overlay__item-link link-beauty" href="index.html#about_me">Обо мне</a></li>
+                <li class="overlay__item"><a class="overlay__item-link link-guide" href="index.html#guide">Гайд</a></li>
+                <li class="overlay__item"><a class="overlay__item-link link-brow" href="index.html#brow">Брови и ресницы</a></li>
+                <li class="overlay__item"><a class="overlay__item-link link-contact" href="index.html#contact">Контакты</a></li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    
+      <section id="about_me" class="one">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-xs d-flex justify-content-start mt-5">
+              <div class="about text-center">
+                <h class="head"><a class="about-item" href="#">Обо мне</a></h>
+              </div>
+            </div>
+            <div class="col-md-7 d-flex justify-content-end mt-5 mt-xs-1">
+              <p class="about-text">Привет! Меня зовут Таня. Уже около пяти лет я увлекаюсь уходом за волосами, а также виду блог, в котором рассказываю про уход за собой и делюсь частичкой своей жизни.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <section class="two">
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col">
+          <div class="about-double">
+            <p class="text-double">Довольно длительное время я слежу не только за своими волосами, но и помогаю девушкам менять свой подход к уходу, делюсь своим опытом и навыками. Благодаря этому, десятки девушек смогли изменить свой уход и добиться лучшего качества волос!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="guide"></div>
+  <section class="three">
+    <div class="container mt-5">
+      <div class="row">
+        <div class="container">
+          <div>
+            <div class="row content">
+              <div class="col-lg-6 order-1 d-flex align-items-center">
+                <div class="info">
+                  <div class="col-sm-12 d-flex justify-content-center mt-5 mb-5">
+                    <div class="guide">
+                      <h class="head"><a class="guide-title text-black" href="#">Гайд</a></h>
+                    </div>
+                  </div>
+                  <p class="info-text text-black mt-3 mb-0">Идеальные волосы - это не миф и не сказка.<br> Это простоя формула - грамотный подбор средств и осознанный подход к уходу.</p>
+                  <p class="info-text text-black mb-0">
+                  В гайде ты найдешь и узнаешь:<br>
+                  - алгоритмы по выбору продуктов ухода<br>
+                  - ты узнаешь о потребностях своих волос<br>
+                  - про составы и компоненты<br>
+                </p>
+                <p class="info-text text-black text-start mt-3">Cможешь экономить, выбирая подходящие для твоих волос средства!</p>
+              
+                  <div class="text-center">
+                    <a class="sellbtn mb-5" href="index.html#price">Подробнее ›</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 text-center order-2">
+             
+                <video id="movie" class="promo" controls="" loop="" autoplay muted name="media" controls="controls">
+                  <source src="promo.mp4" type="video/mp4 ">>
+                </video>
+            
+                <script>
+                  var v = document.getElementById("movie");
+                  v.onclick = function() {
+                    if (v.paused) {
+                      v.play();
+                    } else {
+                      v.pause();
+                    }
+                  };
+                </script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="brow"></div>
+  <section class="four">
+    <div class="brow">
+      <div class="container">
+        <div class="row">
+          <div class="col mb-3">
+            <h class="head"><a class="guide-title text-black" href="#">Брови и ресницы</a></h>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-4">
+        <div class="row ">
+          <div class="col-lg-6 col-xs-12">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000000000000">
+                  <img src="img/brow-small.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="10000000000000">
+                  <img src="img/brow1-small.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="10000000000000">
+                  <img src="img/brow2-small.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="10000000000000">
+                  <img src="img/brow3-small.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="10000000000000">
+                  <img src="img/brow4-small.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Предыдущий</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Следующий</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-6 col-xs-12">
+            <div class="container brow__info">
+              <div class="row">
+                <div class="col-12 mb-5 mt-5">
+                  <p class="brow-text text-black">Помимо блога у меня есть любимая работа, в которую я полностью вкладываю себя. Для меня важно подчеркнуть индивидуальность каждой девушки. Сделать брови и ресницы гармоничным дополнением образа.</p>
+                </div>
+                <div class="col-12">
+                  <div class="text-center">
+                    <a class="brow-btn " target="_blank" href="https://n365976.yclients.com/company:348885?o=m1407593">Запись на брови ›</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  <div class="element-animation">
+  <section id="price" class="five ">
+    <div class="guide-sell ">
+
+      <div class="container ">
+        <div class="row ">
+          <div class="col-4-lg col-12-xs mb-5 mt-5 text-center ">
+            <h class="head "><a class="guide-title text-white mb-3 " href="# ">О гайде</a></h>
+          </div>
+          <div class="col-8-lg col-12-xs mb-5 text-center ">
+            <p class="guide-sell-text ">60 страниц</p>
+            <p class="guide-sell-text ">7 тем</p>
+            <p class="guide-sell-text ">Рекомендации</p>
+            <p class="guide-sell-text ">Более 100 примеров продуктов</p>
+          </div>
+          <div class="col text-center ">
+            <a class="guide-sell-btn text-white" target="_blank" href="https://t.me/privet_beauty_bot ">Купить за 490₽›</a>
+          </div>
+        </div>
+      </div>
+  </section>
+</div>
+
+<script>
+  
+  function onEntry(entry) {
+    entry.forEach(change => {
+      if (change.isIntersecting) {
+       change.target.classList.add('element-show');
+      }
+    });
+  }
+  
+  let options = {
+    threshold: [0.5] };
+  let observer = new IntersectionObserver(onEntry, options);
+  let elements = document.querySelectorAll('.element-animation');
+  
+  for (let elm of elements) {
+    observer.observe(elm);
+  }
+
+</script>
+  <section class="six ">
+    <hr class="line text-black ">
+    <div class="consultation ">
+      <div class="container mt-5 ">
+        <div class="row ">
+          <div class="col-lg-6 col-xs-12 mb-5 d-flex align-self-center ">
+            <h class="head "><a class="guide-title text-black" href="# ">Консультации</a></h>
+          </div>
+          <div class="col-lg-6 col-xs-12 mb-5 ">
+            <div class="about-consultation ">
+              <p class="text-consultation text-black ">На индивидуальной консультации мы углублённо подработаем над уходом за твоими волосами.
+                Консультация длится 1 неделю в любом удобном для тебя месенджере, будем общаться и ухаживать за волосами вместе.
+                
+                Я подберу тебе новый уход исходя из бюджета.
+                Разберу имеющиеся у тебя баночки и составлю схемы ухода с ними.
+                Расскажу о методах нанесения средств.</p>
+              <div class="text-center mt-5 ">
+                <a class="brow-btn mb-5" target="_blank" href="https://t.me/beautytyt">Запись на консультацию ›</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="line text-black ">
+    </div>
+  </section>
+
+  <section id="contact" class="seven">
+    <footer class="footer d-flex align-items-center ">
+      <div class="container text-black">
+        <div class="row d-flex align-items-center ">
+          <div class="col-xl-6 col-xs-12 ">
+            <p class="logo-footer">@privet.beaty</p>
+          </div>
+          <div class="col-xl-6 col-xs-12 social">
+            <div class="box d-flex gap-4 flex-wrap mb-5 justify-content-center mt-5 ">
+              <a class="icon " href="https://t.me/privetbeauty " target="_blank "><img class="footer-img " src="img/telegram-brands.svg "></a>
+              <a class="icon " href="https://www.instagram.com/privet.beauty/guides/?hl=ru " target="_blank "><img class="footer-img " src="img/instagram-brands.svg " alt=" "></a>
+              <a class="icon " href="https://www.pinterest.ru/tanyatanyabeauty/?invite_code=c5c59342cc4e4a00b82fc6141168f7ad&sender=581386770554423306 " target="_blank "><img class="footer-img " src="img/pinterest-brands.svg " alt=" "></a>
+              <a class="icon " href="https://www.tiktok.com/@privet.beauty?_d=secCgwIARCbDRjEFSADKAESPgo8NczIL9duY5zRxTQgXl6Iw5zIyuAmPVWzbXD%2F7PQXgIxj6OKRIMmZLgdOKY57ormItPArPUEvHwu4bm3XGgA%3D&checksum=3e531fa0a671da2eee25a2b2eb479f206fb586b4d5f5e3d9cf083d68132f613f&language=ru&sec_uid=MS4wLjABAAAAh3oSR8KZQ3fh-NkxTuG8qtnJHDKVyZlSCGFbhnhRScD0bN5gnJIwSIvT5FoKPjsm&sec_user_id=MS4wLjABAAAAiKZBa5Uno7zGzwbg6-TOgOJZu5v2ZWwgyGTGweOz5BLasnihG8tJ0qAgMZk1HzUK&share_app_id=1233&share_author_id=6801483377520051206&share_link_id=65DAB39A-5BB8-4A81-93BB-79A34973E2F4&tt_from=vk&u_code=di8b9h58abf92a&user_id=6955031674573849606&utm_campaign=client_share&utm_medium=ios&utm_source=vk&source=h5_m&_r=1 " target="_blank "><img class="footer-img " src="img/tiktok-brands.svg " alt=" "></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+</body>
+
+</html>
